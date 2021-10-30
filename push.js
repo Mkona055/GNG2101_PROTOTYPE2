@@ -17,7 +17,7 @@ const pushSubscription = {
     endpoint:"https://fcm.googleapis.com/fcm/send/etEnSumsWlI:APA91bFqUef5Pz97TTMsQZ4MmlbQOC0eLU6m0YB54G7FaWUwcc9TAsX3g7D1ULJPeYAMgc0eaSFac54TvsDEqi8Iwa5slhERFWTVpAuPhOFRKrsXrocQUj8SMawJLcYYqFh4WE4DVL0N",
     keys:{
         auth:"3Z0ml-ui5w4Njas9iX492w",
-        p256dh:"GGY31IzlBVynfWWCu05d-LBBfX3RGIGuA7FRJTCkAIiRpR7MGLxBTTLdnG9_5IG8l8-z9LUeRPJgA-BNq9CpQE"
+        p256dh:"BGGY31IzlBVynfWWCu05d-LBBfX3RGIGuA7FRJTCkAIiRpR7MGLxBTTLdnG9_5IG8l8-z9LUeRPJgA-BNq9CpQE"
         }
 };
 
