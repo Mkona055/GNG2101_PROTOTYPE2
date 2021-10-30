@@ -22,7 +22,7 @@
 
       if ('serviceWorker' in navigator) {
         addEventListener('load', async () => {
-          let sw = await navigator.serviceWorker.register('./sw.js');
+          let sw = await navigator.serviceWorker.register('./serviceWorker.js');
           console.log(sw);
         });
       }
