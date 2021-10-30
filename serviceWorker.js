@@ -1,4 +1,4 @@
-self.addEventlistener('push', function(e) {
+self.addEventListener('push', function(e) {
     var options = {
       body: 'This notification was generated from a push!',
       icon: 'images/example.png',
