@@ -16,7 +16,15 @@ phoneNumber = driver.find_element_by_xpath('/html/body/form/div[3]/div[2]/div/di
 timeHours = Select(driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[2]/div[1]/div/fieldset/div/div[1]/select[1]'))
 timeMin =  Select(driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[2]/div[1]/div/fieldset/div/div[1]/select[2]'))
 homeCheckBox = driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[2]/div[1]/div/fieldset/div/div[3]/input')
+dropOffAddress1 = driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[2]/div[2]/div/fieldset/div/div[2]/input')
+dropOffDoor1 = driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[2]/div[2]/div/fieldset/div/div[3]/input')
 
+timeHoursPickup2 = Select(driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[4]/div[1]/div/fieldset/div/div[1]/select[1]'))
+timeMinPickup2 = Select(driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[4]/div[1]/div/fieldset/div/div[1]/select[2]'))
+
+pickUpOtherAddress2 = driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[4]/div[1]/div/fieldset/div/div[4]/input')
+pickUpOtherDoor2 = driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[4]/div[1]/div/fieldset/div/div[5]/input')
+homeReturnCheckBox = driver.find_element_by_xpath('/html/body/form/div[3]/div[3]/div[4]/div[2]/div/fieldset/div/div[1]/input')
 
 registrationNumber.send_keys(1236456)
 firstName.send_keys("Mohamed")
@@ -25,8 +33,16 @@ email.send_keys("mkona055@uottawa.ca")
 phoneNumber.send_keys(61311122244)
 
 
-
 #First Trip 
 timeHours.select_by_index(3)
 timeMin.select_by_index(3)
 homeCheckBox.click()
+dropOffAddress1.send_keys('550 Cumberalnd Street')
+dropOffDoor1.send_keys('2')
+
+timeHoursPickup2.select_by_index(10)
+timeMinPickup2.select_by_index(1)
+
+pickUpOtherAddress2.send_keys('550 Cumberalnd Street')
+pickUpOtherDoor2.send_keys('2')
+homeReturnCheckBox.click()

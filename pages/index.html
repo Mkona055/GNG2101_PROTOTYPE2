@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ParaTranspo Notifications</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link type="text/css" href="scripts/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+  <script src="dist/inputmask.js"></script>
+  <script src="dist/bindings/inputmask.binding.js"></script>
+
+  <script src="js/main.js"></script>
+  <script type = "module" src="js/register.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+
+  <meta http-equiv="Refresh" content="50000">
+
+</head>
+
+<body class="bg-secondary">
+    <div class="container	bg-light" >
+      
+          <div class="text-center">
+            <img src="images/logo.png" style="width: 200px;" alt="logo">
+            <h1 class="mt-1 mb-5 pb-1">Create an account</h1>
+          </div>
+        
+          <form class="" id="formCreateAcc" method="post" >
+            <br>
+            <div class="form-group">
+              <label for="regNumber" id="title-form">Para Transpo Registration Number:</label>
+              <input type="text" class="form-control" id="regNumber" placeholder="Enter your registration number"
+                pattern="(\d{6})" maxlength= 6  
+                oninvalid="this.setCustomValidity('Please fill this section with 6 numbers')"
+                oninput="this.setCustomValidity('')"
+                 required>
+        
+            </div>
+            <div class="form-group">
+              <label for="firstName" id="title-form">First Name:</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter your first name "
+                pattern="([A-Za-z](\s)?)+"
+                oninvalid="this.setCustomValidity('Please fill this section without numbers and special characters')"
+                oninput="this.setCustomValidity('')"
+                 required>
+        
+            </div>
+            <div class="form-group">
+              <label for="lastName" id="title-form">Last Name:</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name "
+                pattern="([A-Za-z](\s)?)+"
+                oninvalid="this.setCustomValidity('Please fill this section without numbers and special characters')"
+                oninput="this.setCustomValidity('')"
+                 required>
+        
+            </div>
+            <div class="form-group">
+              <label for="email" id="title-form"> Contact E-Mail:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email"
+                oninvalid="this.setCustomValidity('Please fill this section using a valid email format')"
+                oninput="this.setCustomValidity('')"
+
+                required>
+        
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber" id="title-form">Contact Phone:</label>
+              <input type="text" class="form-control" id="phoneNumber" 
+                data-inputmask="'mask': '(999)-999-9999'" placeholder="Enter your phone"  
+                oninvalid="this.setCustomValidity('Please fill this section')"
+                oninput="this.setCustomValidity('')"
+                required>
+            </div>
+
+            <div class="form-group">
+              
+              <label for="accPassword" id="title-form" class="col-form-label">Password:</label>
+              <div id="message">
+                <h6>Must contain the following:</h6>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div><br>
+              <input type="password" id="accPassword" class="form-control" aria-describedby="passwordHelpInline" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+              placeholder="Enter your password" required>
+            
+            </div>
+            <br>
+            <div class="text-center">
+              <button class="btn btn-dark text-center" id="subBtn" type="submit" >Create account</button><br><br>
+              <h5> Already have an account? <a href="/login.html">Login here</a></h5><br>
+            </div>
+         </form>
+     
+    </div>
+
+</body>
+<script>
+
+</script>
+</html>

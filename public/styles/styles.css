@@ -1,0 +1,150 @@
+a:hover{
+    color:black;
+}
+td{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Montserrat'; 
+}
+.container{
+    margin-top: 20px;
+    width: 600px;
+    height:auto;
+}
+label, h6{
+    font-family: 'Montserrat'; 
+    
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 15px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+#title-form{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(5, 133, 124);
+
+}
+#form{
+    height: 100%;
+}
+#label-title{
+    font-size: 2px;
+    font-weight: bold;
+    color: rgba(0, 153, 153, 0.86);
+}
+h1,h2,h3,h5{
+    margin: auto;
+    font-family: 'Montserrat'; 
+}
+h1{
+    color: rgba(0, 153, 153, 0.86);
+
+}
+h4{
+    
+    font-family: 'Montserrat'; 
+}
+#servicesbar, #coranimo{
+    
+    font-family: 'Montserrat'; 
+    font-size: 30px;
+}
+#aboutbar{
+
+    font-family: 'Montserrat'; 
+    font-size: 30px;
+}
+.shrink {
+    
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    transition: .8s all;
+    padding: 12px;
+    opacity: .95;
+  }
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 153, 153, 0.86);
+    border-color: rgba(0, 153, 153, 0.86);;
+}
+#close{
+    background-color: black;
+}
+
+.header{
+    font-family: 'Montserrat';
+    color: white; 
+}
+.card-body{
+    font-family: 'Montserrat'; 
+}
+.card-title{
+    font-weight: bold;
+    color: rgba(0, 153, 153, 0.86);
+}
+
+
+.title{
+    margin: auto;
+}
+
+.card-footer{
+    border-top: white;
+   background-color:white;
+    margin: auto;
+}
+#navbar, #navbarshort, #navbarlong{
+    margin: auto;
+    border-width: 100px;
+    
+}
+
+.tle{
+    font-weight: bold;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+button{
+    font-family: Montserrat;
+}
